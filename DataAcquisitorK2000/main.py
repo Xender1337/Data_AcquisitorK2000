@@ -1,7 +1,11 @@
 import serial
 import time
 import datetime
+import sys
+import io
 import re
+
+import timeit
 
 ser = serial.Serial(
     port='/dev/serial/by-path/platform-3f980000.usb-usb-0:1.2:1.0-port0',
@@ -44,7 +48,7 @@ while True:
     ser.write(":INIT\n")
     time.sleep(0.1)
 
-    #raw_input("Start sampling press ENTER : ")
+    raw_input("Start sampling press ENTER : ")
     ser.write("*TRG\n")
 
     ser.write("*wai\n")
