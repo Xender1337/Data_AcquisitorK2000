@@ -42,8 +42,8 @@
       <file leaf-file-name="k2000_driver.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataAcquisitorK2000/Library/k2000_driver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="981">
-              <caret line="134" column="10" lean-forward="false" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
+            <state relative-caret-position="261">
+              <caret line="86" column="31" lean-forward="false" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -96,8 +96,8 @@
         <option value="$PROJECT_DIR$/script.py" />
         <option value="$PROJECT_DIR$/Data_Acquisitor/script.py" />
         <option value="$PROJECT_DIR$/DataAcquisitorK2000/Data_Acquisitor/script.py" />
-        <option value="$PROJECT_DIR$/DataAcquisitorK2000/Library/k2000_driver.py" />
         <option value="$PROJECT_DIR$/DataAcquisitorK2000/script.py" />
+        <option value="$PROJECT_DIR$/DataAcquisitorK2000/Library/k2000_driver.py" />
       </list>
     </option>
   </component>
@@ -505,8 +505,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataAcquisitorK2000/Library/k2000_driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="981">
-          <caret line="134" column="10" lean-forward="false" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
+        <state relative-caret-position="261">
+          <caret line="86" column="31" lean-forward="false" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
