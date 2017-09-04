@@ -16,8 +16,8 @@ class K2000Driver:
             baudrate=19200,
             parity=serial.PARITY_NONE,
             stopbits=serial.STOPBITS_ONE,
-            bytesize=serial.SEVENBITS,
-            timeout=100000,
+            bytesize=serial.EIGHTBITS,
+            timeout=100,
         )
         return self.ser
 
@@ -42,6 +42,14 @@ class K2000Driver:
 
             # To mV
             elif searchObj.group(4) is '-':
+                if int(searchObj.group(5)) is 7:
+                    voltage = "0.000" + voltage_str
+                    # print("Voltage : {} mV ".format(voltage))
+                    return voltage, "mV"
+                if int(searchObj.group(5)) is 6:
+                    voltage = "0.00" + voltage_str
+                    # print("Voltage : {} mV ".format(voltage))
+                    return voltage, "mV"
                 if int(searchObj.group(5)) is 5:
                     voltage = "0.0" + voltage_str
                     # print("Voltage : {} mV ".format(voltage))
@@ -93,6 +101,7 @@ class K2000Driver:
             raise Exception(ValueError)
 
         self.ser.write("*RST\n")
+        time.sleep(0.1)
         self.ser.write(":TRAC:POIN {}\n".format(smpl_nbr))
         time.sleep(0.1)
         self.ser.write(":VOLTage:DC:NPLCycles {}\n".format(nplc))
