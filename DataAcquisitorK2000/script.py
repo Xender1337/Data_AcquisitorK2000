@@ -11,6 +11,7 @@ test.init_serial(SERIAL_INTERFACE)
 
 # delay = 0.02505265 / NPLC = 1 for ~0.05 sec per measurement
 # test.init_k2000(smpl_nbr=1024, trg_source="BUS", nplc="1", delay=0.02505265)
+
 test.init_k2000(smpl_nbr=1024, trg_source="BUS", nplc="0.1")
 
 test.trig_k2000(wait_acquisition=False)

@@ -82,10 +82,10 @@ class K2000Driver:
             print("Error not a valid trigger source : {} 98a08c7a-269c-4622-b324-c4bcd3cd256c".format(trg_source))
             raise Exception(ValueError)
 
-        # 0.01 / 0,0062763671875 sec per measure
-        # 0.1 / 0,007452734375 sec per measure
-        # 1 / 0,02763671875 sec per measure
-        # 10 / 0,6133642578125 sec per measure
+        # 0.01 / 0,008276889648438 sec per measure
+        # 0.1 / 0,008951426757813 sec per measure
+        # 1 / 0,029083762695313 sec per measure
+        # 10 / 0,639098 sec per measure
         if nplc in ("0.01", "0.1", "1", "10"):
             pass
         else:
